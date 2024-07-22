@@ -1,0 +1,154 @@
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 16px;
+    border-top: 6px solid #333;
+    border-bottom: 6px solid #333;
+}
+
+.faq h1{
+  font-size: 55px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    font-size: 25px;
+}
+
+.accordion .item {
+  margin-bottom: 10px;
+  border: 1px solid #525252;
+  border-radius: 4px;
+  overflow: hidden; 
+}
+
+.accordion .item .question {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #545454;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion .item .question:hover {
+  background: #454242;
+}
+
+.accordion .item .content{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 20px;
+  background: #2c2b2b;
+}
+
+.accordion .item .icon {
+  font-weight: bold;
+}
+
+.accordion .item.active .content {
+  max-height: 600px; 
+  padding: 30px 20px;
+}
+
+.faq-form{
+  margin-top: 40px;
+  width: 100%;
+  max-width: 750px;
+  position: relative;
+  display:inline-block;
+}
+
+.email-signup{
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    padding: 20px;
+     background: #9a9a9a46;
+     border: 1px solid #cccccce6; 
+    color: #9a9a9a;
+}
+
+.email-signup button{
+    background:#db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    padding:22px ;
+    border-radius: 4px;
+    margin-left: 6px;
+}
+.err-message{
+  position: absolute;
+  margin-top:-28px;
+  color: red;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .faq {
+    padding: 10px 5%;
+    font-size: 16px;
+  }
+
+  .faq h1 {
+    font-size: 30px;
+  }
+
+  .accordion li {
+    font-size: 18px;
+  }
+
+  .accordion .item .question {
+    padding: 10px 5px;
+    font-size: 18px;
+  }
+
+  .accordion .item .content {
+    padding: 0 10px;
+  }
+
+  .accordion .item.active .content {
+    padding: 20px 10px;
+  }
+
+  .faq-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .email-signup {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .email-signup input {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .email-signup button {
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 0;
+  }
+}
+

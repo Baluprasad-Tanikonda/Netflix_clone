@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-step{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0 ;
+    background: white;
+   padding: 10px 100px;
+
+}
+
+.navbar-step img{
+    width: 160px;
+}
+
+.navbar-step span{
+    color:black;
+    cursor: pointer; 
+}
+
+.steps_bg{
+    height: 100vh;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps_bg h3{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 32px;
+    color: #333333;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 60px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    height: 100vh;
+    max-height: 550px;
+    width: 100%;
+}
+.card1 input {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 60px;
+    font-size:22px ;
+    transition: 0.1s ease;
+}
+
+.step-password{
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+}
+
+.labelline{
+    position: absolute;
+    font-size: 16px;
+    transition: 0.2s ease;
+    margin-top: -80px;
+    padding-left: 10px;
+}
+
+.step-password input:focus,
+.step-password input:valid{
+   border: 2px solid #000000;
+}
+
+
+input:focus + .labelline,
+input:valid + .labeline{
+    line-height: 30px;
+    padding: 0 12px;
+    z-index: 1111;
+}
+
+.forgot{
+    color:#0071eb;
+}
+
+.card1 button {
+    height: 60px;
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-top: 20px;
+}
