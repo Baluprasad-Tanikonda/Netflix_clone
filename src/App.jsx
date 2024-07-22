@@ -11,6 +11,7 @@ import Header_page from './Pages/Header_page/Header_page';
 const App = () => {
   return (
     <div>
+      <h2>Hi</h2>
       <Routes>
         <Route path="/" element={<Header_page />} />
         <Route path="/login" element={<Login />} />
